@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gymtracker"
+version = "0.1.0"
+description = ""
+authors = ["Victoria"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = { extras = ["standard"], version = "^0.136.1" }
+pydantic-settings = "^2.14.1"
+uvicorn = { extras = ["standard"], version = "^0.47.0" }
+sqlalchemy = { extras = ["asyncio"], version = "^2.0.49" }
+asyncpg = "^0.31.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
